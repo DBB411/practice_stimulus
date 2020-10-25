@@ -1,0 +1,21 @@
+<h1>Hello<h1>
+<div data-controller="hello">
+  <button data-action="click->hello#action1">click to show/hide</button>
+  <p data-target="hello.target1">hi, </p>
+  <p data-target="hello.target1">hi1.1, </p>
+</div>
+<div data-controller="hello">
+  <button data-action="click->hello#action1">click2 to show/hide</button>
+  <p data-target="hello.target1">hi2, </p>
+  <p data-target="hello.target1">hi2.1, </p>
+</div>
+
+<div
+  data-controller="test-data-map"
+  data-test-data-map-check="It is check"
+  data-test-data-map-check-again="['Checking again','array']"
+  data-random-attr="It is data-random-attr"
+>
+  <button data-action="click->hello#action1">click2 to show/hide</button>
+  <p data-target="testDataMap.name">hi2, </p>
+</div>
