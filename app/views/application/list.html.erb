@@ -1,0 +1,6 @@
+<h1>List: <%= @list.name%><h1>
+<ul data-controller="list" data-list-id="<%= @list.id %>" data-list-move-items-url="<%= "/lists/#{@list.id}/move-items" %>" id="sortable">
+  <% @items.each do |item| %>
+    <li item-id="<%= item.id %>" class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><%= item.name %></li>
+  <% end %>
+</ul>
